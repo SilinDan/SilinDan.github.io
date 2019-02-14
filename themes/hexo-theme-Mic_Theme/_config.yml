@@ -6,41 +6,44 @@
 head:
     favicon: "/img/logo_miccall.png"
     keywords: miccall
-    backgroundpic : "img/bg.jpg"
+    backgroundpic : "img/universe.jpg"
 
 Intro:
-    name: MICCALL
-    slogan: "Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way"
-    HeadButton: MICCALL
+    name: 四零の博物馆
+    slogan: "我知这世界本如露水般短暂, <br/>  然而 然而."
+    HeadButton: 四零の博物馆
 
 Nav:
     Home_name: 主页
     is_use_categories : true 
-    categories_name: 分类
+    categories_name: 文章
     is_use_archives : false
     archives_name: 归档
     
     #Social
     # for more icons, please see http://fontawesome.io/icons/#brand
     icon:
-        github: https://github.com/miccall
-        500px: http://500px.com
+        github: https://github.com/SilinDan
+        weibo: https://weibo.com/u/2631163541
         
     pages:
-        简历: 
+        摄影库 :
+            link: "/picture/"
+        收集博物馆 :
+            link: "/collect/"
+            #编程の海洋馆
+            #文学の海洋馆
+            #艺术の海洋馆
+        关于我: 
             link: "/about/"
-        团队 :
-            link: "/group/"
-        图库 :
-            link: "/gallery/"
-        标签:
-            link: "/tag/"
+        友情链接:
+            link: "/friend/"
         #自定义标签名
         #   link：“路径”
 
 MainFirst:
-    name: Miccall Metro
-    description: Technical  Artist  of  Games   
+    name: Silin Dan
+    description: Always Curious,Forever Student.    
     pic_url: /images/me.jpg
     goto_ulr: ""
 

@@ -28,7 +28,7 @@ Nav:
         
     pages:
         摄影库 :
-            link: "/picture/"
+            link: "/gallery/"
         收集博物馆 :
             link: "/collect/"
             #编程の海洋馆
@@ -45,7 +45,7 @@ MainFirst:
     name: Silin Dan
     description: Always Curious,Forever Student.    
     pic_url: /images/me.jpg
-    goto_ulr: ""
+    goto_ulr: "/about/"
 
 Gallery :
     title: Mr.metro 

@@ -502,6 +502,7 @@
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
+			white-space: pre-line;
 		}
 
 	hr {

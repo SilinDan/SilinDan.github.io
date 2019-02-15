@@ -123,14 +123,14 @@
 
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in">
+    <div id="wrapper" class="fade-in overlay">
         <!-- Intro 头部显示 s -->
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
-        <%- partial('_partial/headerlogo') %>
+        <%- partial('_partial/headerlogo'  , {}, {cache: true}) %>
             <!-- Nav 导航条 start -->
-            <%- partial('_partial/nav') %>
-                <%- partial('_partial/mainfirst') %>
+            <%- partial('_partial/nav' , {}, {cache: true} ) %>
+            <%- partial('_partial/mainfirst' , {}, {cache: true} ) %>
                     <div class="demo">
                         <div class="container">
                             <div class="row">

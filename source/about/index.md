@@ -3,7 +3,7 @@ title: about me
 date: 2019-02-14 15:00:07
 thumbnail: https://images.unsplash.com/photo-1527348425885-2ad996ae7ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 # 略缩图
 ---
-Welcome to [四季の博物馆](https://silindan.github.io/)! 
+Welcome to [四零の博物馆](https://silindan.github.io/)! 
 
 #### 关于我
 
@@ -11,7 +11,7 @@ Welcome to [四季の博物馆](https://silindan.github.io/)!
 <font size=3>  
 这里是19年毕业，本科计算机专业，即将踏入社会成为一名程序媛的大四党。
     
-暑假在东莞离家的近一家金融互联网公司做前端，那里有一群非常可爱的小哥哥小姐姐。恰逢秋招之时，被学校召回实训（哭泣...虽然这并不是我错过秋招的借口）然后目前状况：待业，等着被哪家公司拎走~o( =∩ω∩= )m
+暑假在东莞离家近的一家金融互联网公司做前端，那里有一群非常可爱的小哥哥小姐姐。恰逢秋招之时，被学校召回实训（哭泣...虽然这并不是我错过秋招的借口）然后目前状况：待业，等着被哪家公司拎走~o( =∩ω∩= )m
     
 如果非要用什么来形容自己，也许是“充满好奇心的梦想家”。
 
@@ -43,7 +43,7 @@ Welcome to [四季の博物馆](https://silindan.github.io/)!
 ### 联系我：
 Email: MissJingmi@gmail.com
 wechat: 237720488
-You can catch me in <u>[***github***](https://github.com/SilinDan)</u> / <u>[***知乎***](https://www.zhihu.com/people/silin-dan)</u> / <u>[***微博***](https://weibo.com/u/2631163541)</u> / <u>[***掘金***](https://juejin.im/user/5bdc7a7df265da61335609e5/)</u>
+You can catch me in <u>[***github***](https://github.com/SilinDan)</u> / <u>[***知乎***](https://www.zhihu.com/people/silin-dan)</u> / <u>[***微博***](https://weibo.com/u/2631163541)</u> / <u>[***掘金***](https://juejin.im/user/5bdc7a7df265da61335609e5/) </u> / <u>[***Facebook***](https://www.facebook.com/profile.php?id=100028253920296&ref=bookmarks)</u>
 
 <center>
 欢迎您捐赠本站，您的支持是我最大的动力！

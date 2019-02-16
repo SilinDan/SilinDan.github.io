@@ -28,7 +28,7 @@ Nav:
         
     pages:
         摄影库 :
-            link: "/Gallery/"
+            link: "/gallery/"
         收集博物馆 :
             link: "/collect/"
             #编程の海洋馆

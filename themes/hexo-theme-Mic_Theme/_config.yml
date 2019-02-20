@@ -58,7 +58,7 @@ Gallery :
 # Custom code Render System 自定义代码渲染 
 # default dark funky okaidia twilight coy solarized  可选项  
 # link to review : http://prismjs.com/index.html   官网预览
-prism: coy
+prism: okaidia
 
 # Custom Fonts
 fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "FZLTCXHJW", Arial, sans-serif
@@ -67,7 +67,7 @@ fonts: FZLTCXHJW, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB"
 # Available value of "use":
 #     duoshuo | disqus | disqus_click | changyan
 comment:
-    use: disqus_click
+    use: changyan
     shortname: http-miccall-tech 
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"

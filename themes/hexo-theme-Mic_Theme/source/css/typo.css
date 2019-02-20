@@ -23,3 +23,7 @@ blockquote {
 .typo a {
   color:  #808fbd;
 }
+
+img{
+  max-width: 100%;
+}

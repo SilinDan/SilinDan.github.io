@@ -44,7 +44,7 @@ wechat: 237720488
 You can catch me in <u>[***github***](https://github.com/SilinDan)</u> / <u>[***知乎***](https://www.zhihu.com/people/silin-dan)</u> / <u>[***微博***](https://weibo.com/u/2631163541)</u> / <u>[***掘金***](https://juejin.im/user/5bdc7a7df265da61335609e5/) </u> / <u>[***Facebook***](https://www.facebook.com/profile.php?id=100028253920296&ref=bookmarks)</u>
 
 <center>
-欢迎您捐赠本站，您的支持是我最大的动力！
+支付宝扫一扫捐赠本站，您的支持是我最大的动力！
 ![](http://m.qpic.cn/psb?/V12FzsSL2H4QOz/h8x3hFqCe6R9kNYafe5TweDppP8mUBqp6l.sPqYrDww!/b/dEcBAAAAAAAA&bo=bwFQAW8BUAERCT4!&rf=viewer_4)
 </center>
 <br/>

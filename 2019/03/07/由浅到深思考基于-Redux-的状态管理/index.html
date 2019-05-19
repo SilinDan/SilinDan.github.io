@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html>
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<link rel="bookmark" type="image/x-icon" href="/img/logoko.png">
+	<link rel="shortcut icon" href="/img/logoko.png">
+	
+			    <title>
+    四零の博物馆
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/mic_main.css">
+    <link rel="stylesheet" href="/css/dropdownMenu.css">
+    <meta name="keywords" content="miccall">
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css">
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/universe.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_okaidia.css">
+<link rel="stylesheet" href="/css/typo.css">
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">四零の博物馆</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special">
+            <ul class="menu links">
+			<!-- Homepage  主页  --> 
+			<li>
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">文章</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/博物馆周刊/">博物馆周刊</a></li><li><a class="category-link" href="/categories/反思与沉淀/">反思与沉淀</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
+	                    </li></ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/gallery/" title="摄影库">
+		                摄影库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/collect/" title="收集博物馆">
+		                收集博物馆
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/about/" title="关于我">
+		                关于我
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/friend/" title="友情链接">
+		                友情链接
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/SilinDan" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a title="weibo" href="https://weibo.com/u/2631163541" target="_blank" rel="noopener">
+                            <i class="icon fa fa-weibo"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main">
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://images.unsplash.com/photo-1551250930-ace1ad395cea?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=60);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>由浅到深思考基于 Redux 的状态管理</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="一、为什么要使用Redux"><a href="#一、为什么要使用Redux" class="headerlink" title="一、为什么要使用Redux?"></a>一、为什么要使用Redux?</h1><p>这是老生常谈的问题了，几乎每一个写Redux的文章里都会提到这个问题。在阮一峰老师的文章中提到过，“如果你不知道是否需要 Redux，那就是不需要它。”如何理解这句话呢？我们从概念的角度和实际项目中可能出现问题的角度来解答。</p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p> 简单说，如果你的UI层非常简单，没有很多互动，Redux 就是不必要的。只有符合了下面的几种情况，才是Redux的使用场景：</p>
+<blockquote>
+<p>1.用户的使用方式复杂</p>
+</blockquote>
+<blockquote>
+<p>2.不同身份的用户有不同的使用方式（比如普通用户和管<br> 理员）</p>
+</blockquote>
+<blockquote>
+<p>3.多个用户之间可以写作</p>
+</blockquote>
+<blockquote>
+<p>4.与服务器大量交互，或者使用了WebSocket</p>
+</blockquote>
+<h2 id="联系实际"><a href="#联系实际" class="headerlink" title="联系实际"></a>联系实际</h2><p>1.假设产品经理提出了这样一个需求：</p>
+<p><strong><em>写一个简单的Logger来实现用户的动作跟踪记录。</em></strong></p>
+<p>我们可能会这么写：</p>
+<p>在MVVM框架中（以纯Vue举例）：</p>
+<pre><code class="js">methods: {
+  handleLogin () {
+    console.log(&#39;[Logger] 用户登录&#39;)
+    ...
+  },
+  handleLogout () {
+    console.log(&#39;[Logger] 用户退出登录&#39;)
+    ...
+  }
+}
+</code></pre>
+<p>2.接着产品经理说：“<strong><em>在上述需求的基础上，记录用户的操作时间</em></strong>”。</p>
+<p>此时，我们会在每个输出中添加一个new Date():</p>
+<pre><code class="js">methods: {
+  handleLogin () {
+    console.log(&#39;[Logger] 用户登录&#39;, new Date())
+    ...
+  },
+  handleLogout () {
+    console.log(&#39;[Logger] 用户退出登录&#39;, new Date())
+    ...
+  }
+}
+</code></pre>
+<p>3.需求3：<strong><em>把控制台中有关Logger的输出全部去掉</em></strong></p>
+<p>于是前端们又要一个个地把Logger注释掉。。。</p>
+<p>4.需求4：<strong><em>正式上线后，自动收集bug，并还原当时的场景</em></strong></p>
+<p>到了要完全还原当时的使用场景时，前端开始手无足措了。因为您不知道这个报错，用户是怎么一步一步操作得来的<br>就算知道用户是如何操作得来的，但在您的电脑上，测试永远都是通过的</p>
+<h2 id="※-如何解决撤销的需求"><a href="#※-如何解决撤销的需求" class="headerlink" title="※ 如何解决撤销的需求"></a>※ 如何解决撤销的需求</h2><p>使用Redux，将应用中 <strong><em>所有的动作与状态都统一管理</em></strong>，让一切都有据可循。</p>
+<p>这样一来，便可以在开发调试的过程中 <strong><em>撤销与重做</em></strong> 了。并且可以完整的记录下每个动作。随时随地能够恢复到之前的状态。</p>
+<h1 id="二、Store"><a href="#二、Store" class="headerlink" title="二、Store"></a>二、Store</h1><h2 id="2-1-Store是什么？"><a href="#2-1-Store是什么？" class="headerlink" title="2.1 Store是什么？"></a>2.1 Store是什么？</h2><p>state是应用的状态。</p>
+<p><strong><em>store是state的管理者</em></strong>。</p>
+<blockquote>
+<p>二者的关系是：state = store.getState()</p>
+</blockquote>
+<pre><code class="js">{
+  //这是一个应用初始state
+  counter: 0,
+  todos: []
+}
+</code></pre>
+<h2 id="2-2-生成一个store"><a href="#2-2-生成一个store" class="headerlink" title="2.2 生成一个store"></a>2.2 生成一个store</h2><p>Redux规定，一个应用只应有一个单一的 store，其管理着唯一的应用状态 state。</p>
+<p>想生成一个store，需要调用Redux的createStore.</p>
+<pre><code class="js">import {createStore} from &#39;redux&#39;
+...
+const store = createStore(reducer,initialState)//store是靠reducer生成的
+</code></pre>
+<p>在上面代码中，createStore接收两个参数，返回新生成的 Store 对象：</p>
+<p>reducer(<strong><em>reducer是一个函数，负责更新并返回一个新的state</em></strong>)和</p>
+<p>initialState(用于前后端同构的数据同步)</p>
+<h2 id="2-3-通过store更改状态state"><a href="#2-3-通过store更改状态state" class="headerlink" title="2.3 通过store更改状态state"></a>2.3 通过store更改状态state</h2><p>Redux对Store的规定</p>
+<ul>
+<li>不能直接修改应用的状态 state<br>不能直接修改应用的状态state，也就是说，下面的行为是不允许的：<pre><code class="js">//禁止使用下面的方法
+var state = store.getState()
+state.counter = state.counter + 1 
+</code></pre>
+那么应当如何修改state呢？<br>必须使用 <strong><em>dispatch(action)函数 来改变state</em></strong><h2 id="2-4-Store的四个函数"><a href="#2-4-Store的四个函数" class="headerlink" title="2.4 Store的四个函数"></a>2.4 Store的四个函数</h2></li>
+</ul>
+<pre><code class="js">getState()//获取整个 state
+</code></pre>
+<pre><code class="js">dispatch(action)//触发 state 改变的【唯一途径】
+</code></pre>
+<pre><code class="js">subscribe(listener) //可以理解成是 DOM 中的 addEventListener
+</code></pre>
+<pre><code class="js">replaceReducer(nextReducer) // 一般在 Webpack Code-Splitting 按需加载的时候用
+</code></pre>
+<p>那么此时，我们已经知道了 <strong><em>改变state方式</em></strong>，我们自然想知道，要将什么 <strong><em>内容传给state</em></strong>。</p>
+<p>带着这个疑问，引入了Action这个概念。</p>
+<h1 id="三、Action"><a href="#三、Action" class="headerlink" title="三、Action"></a>三、Action</h1><h2 id="3-1-Action是什么？"><a href="#3-1-Action是什么？" class="headerlink" title="3.1 Action是什么？"></a>3.1 Action是什么？</h2><p>Action的本质是一个包含 <strong>type</strong> 属性的 <strong>对象</strong>。</p>
+<p>type: 描述用户行为，是我们追踪用户行为的关键。</p>
+<p>举个例子，如果想要 <strong><em>增加一个待办事项：</em></strong></p>
+<pre><code class="js">{
+//代码1
+    type:&#39;ADD_TODO&#39;,
+    payload:{
+        id: 1,
+        content: &#39;待办事项1&#39;,
+        completed: false 
+    }
+}
+</code></pre>
+<h2 id="3-2-生成Action"><a href="#3-2-生成Action" class="headerlink" title="3.2 生成Action"></a>3.2 生成Action</h2><pre><code class="js"> //生成一个“新增一个待办事项”的action
+ let id=1
+ function addTodo(content){
+    return{
+        type:&#39;ADD_TODO&#39;,
+        payload:{
+            id: 1,
+            content: &#39;待办事项1&#39;,
+            completed: false 
+        }
+    } 
+ }
+</code></pre>
+<p>上面的函数就是 <strong>Action Creator</strong>。它的本质是创造action的一个<strong>函数</strong>，返回值是一个action(对象)。</p>
+<h2 id="3-3-将对象action的内容传给state"><a href="#3-3-将对象action的内容传给state" class="headerlink" title="3.3 将对象action的内容传给state"></a>3.3 将对象action的内容传给state</h2><p>结合3.2的代码，此时有一个表单如下：</p>
+<pre><code class="js">&lt;input type=&quot;text&quot; id=&quot;todoInput&quot; /&gt;
+&lt;button id=&quot;btn&quot;&gt;提交&lt;/button&gt;
+</code></pre>
+<p>当在输入框输入“代办事项2”后，点击一下提交按钮，我们的state状态需要改变成：</p>
+<pre><code class="js">{
+  counter: 0,
+  todos: [{
+    id: 1,
+    content: &#39;待办事项1&#39;,
+    completed: false
+  }, {
+    id: 2,
+    content: &#39;待办事项2&#39;,
+    completed: false
+  }]
+}
+</code></pre>
+<p>该如何实现将表单数据传入到state中呢？<br>（假设 store 为全局变量，并引入了 jQuery ）</p>
+<p>于是可以这样写：</p>
+<pre><code class="js">$(&#39;#btn&#39;).on(&#39;click&#39;,function(){
+    let content = $(&#39;#todoInput&#39;).val()
+    let action = addTodo(content) //执行Action Creator获得action
+    store.dispatch(action) //改变state的唯一方法。
+}
+</code></pre>
+<p>state状态就能有“新增事项2”了。</p>
+<p>但是这里有个问题：</p>
+<p>为什么在 <strong>store.dispatch(action)</strong> 之后， Redux会明确知道是提取 <strong>action.payload</strong>，并写到对应的state.todos数组中，而不是直接将整个action对象传进去呢？</p>
+<p>带着这个疑问，我们引入了 <strong>Reducer</strong>概念</p>
+<h1 id="四、Reducer"><a href="#四、Reducer" class="headerlink" title="四、Reducer"></a>四、Reducer</h1><h2 id="4-1-Reducer是什么？"><a href="#4-1-Reducer是什么？" class="headerlink" title="4.1 Reducer是什么？"></a>4.1 Reducer是什么？</h2><p>在上面例子中，store.dispatch(action)后，就会触发 <strong>reducer</strong>执行，reducer的实质是一个同步的 <strong>纯函数</strong>。</p>
+<blockquote>
+<p>纯函数：<a href="https://en.wikipedia.org/wiki/Pure_function" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Pure_function</a></p>
+</blockquote>
+<p>它根据 <strong>action.type</strong> 来更新state并返回 <strong>nextState</strong>，最后将返回值 <strong>完全覆盖</strong>原来的 <strong>state</strong>，更新state。</p>
+<h2 id="4-2-Reducer分析action-更新state"><a href="#4-2-Reducer分析action-更新state" class="headerlink" title="4.2 Reducer分析action,更新state"></a>4.2 Reducer分析action,更新state</h2><p>在上面待办事项的例子中，Reducer大致如下：</p>
+<pre><code class="js">const initState={
+    counter:0,
+    todos:[]
+}
+
+function reducer(state,action){
+    state = state || initState;
+
+    switch(action.type){
+        case &#39;ADD_TODO&#39;:
+        var nextState = _.cloneDeep(state) //lodash的深克隆
+        //将action.payload放进nextState.todos里
+         nextState.todos.push(action.payload)
+    }
+
+    default:
+    //若无修改，必须返回原state，否则就undefined
+    return state
+}
+</code></pre>
+<h1 id="五、Redux总结"><a href="#五、Redux总结" class="headerlink" title="五、Redux总结"></a>五、Redux总结</h1><p>思想顺序:</p>
+<p><strong>Action Creator =&gt; action =&gt; store.dispatch(action) =&gt; reducer(state, action) =&gt; <del>原 state</del> state = nextState</strong></p>
+<p>一个Redux文档的Todo示例：<a href="https://www.redux.org.cn/docs/basics/ExampleTodoList.html" target="_blank" rel="noopener">https://www.redux.org.cn/docs/basics/ExampleTodoList.html</a></p>
+<h1 id="Redux框架应当解决的问题？"><a href="#Redux框架应当解决的问题？" class="headerlink" title="Redux框架应当解决的问题？"></a>Redux框架应当解决的问题？</h1><p>Shawn McKay写的《重新思考 Redux》中提到了这样一个公式：</p>
+<blockquote>
+<p>工具质量 = 工具节省的时间/使用工具消耗的时间</p>
+</blockquote>
+<p>而有时候我们会发现，<strong><em>使用原生Redux可能会降低工作效率</em></strong>。</p>
+<p>虽然Redux的数据管理思想是正确的，但是 <strong><em>为了更有效率的使用redux，我们需要使用基于redux的框架。</em></strong></p>
+<h2 id="※-从6个角度看Redux框架需要解决什么问题"><a href="#※-从6个角度看Redux框架需要解决什么问题" class="headerlink" title="※ 从6个角度看Redux框架需要解决什么问题"></a>※ 从6个角度看Redux框架需要解决什么问题</h2><h3 id="简化初始化"><a href="#简化初始化" class="headerlink" title="简化初始化"></a>简化初始化</h3><h3 id="简化-Reducers"><a href="#简化-Reducers" class="headerlink" title="简化 Reducers"></a>简化 Reducers</h3><h3 id="支持-async-await"><a href="#支持-async-await" class="headerlink" title="支持 async/await"></a>支持 async/await</h3><h3 id="将-action-reducer-改为两种-action"><a href="#将-action-reducer-改为两种-action" class="headerlink" title="将 action + reducer 改为两种 action"></a>将 action + reducer 改为两种 action</h3><h3 id="不再显示申明-action-type"><a href="#不再显示申明-action-type" class="headerlink" title="不再显示申明 action type"></a>不再显示申明 action type</h3><h3 id="Reducer-直接作为-ActionCreator"><a href="#Reducer-直接作为-ActionCreator" class="headerlink" title="Reducer 直接作为 ActionCreator"></a>Reducer 直接作为 ActionCreator</h3><p>精读《重新思考 Redux》：<a href="https://juejin.im/post/5af8dff9f265da0b9f40616b#heading-2" target="_blank" rel="noopener">https://juejin.im/post/5af8dff9f265da0b9f40616b#heading-2</a></p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><ol>
+<li><p><a href="https://juejin.im/post/5af8dff9f265da0b9f40616b" target="_blank" rel="noopener">黄子毅: 精读《重新思考 Redux》</a></p>
+</li>
+<li><p><a href="https://github.com/kenberkeley/redux-simple-tutorial" target="_blank" rel="noopener">kenberkeley: 《Redux 简明教程》</a></p>
+</li>
+<li><p><a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html" target="_blank" rel="noopener">阮一峰：《React 入门实例教程》</a></p>
+</li>
+<li><p><a href="https://juejin.im/post/5c617c576fb9a049e93d33a4" target="_blank" rel="noopener">前端新能源:《 给2019前端的5个建议》</a> </p>
+</li>
+<li><p><a href="https://github.com/kenberkeley/redux-simple-tutorial/blob/master/redux-advanced-tutorial.md" target="_blank" rel="noopener">kenberkeley：《Redux 进阶教程》</a></p>
+</li>
+</ol>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 changyan -->
+<div id="changyan-comment">
+    <!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="2019/03/07/由浅到深思考基于-Redux-的状态管理/"></div>
+<script type="text/javascript">
+(function(){
+var appid = '';
+var conf = '';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+</div>
+<style>
+    #changyan-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+        <div id="copyright">
+    <ul>
+        <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+        <li>
+            Onwer <a href="https://github.com/SilinDan" style="border-bottom: none;">Silin Dan</a>
+            <a href="https://github.com/SilinDan"><i class="icon fa fa-github"></i></a>
+            <a href="https://weibo.com/u/2631163541"><i class="icon fa fa-weibo"></i></a>
+        </li>
+    </ul>
+    
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    
+</div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

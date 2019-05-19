@@ -151,24 +151,96 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://images.unsplash.com/photo-1527348425885-2ad996ae7ccb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>about me</h2></a>
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://images.unsplash.com/photo-1551376347-075b0121a65b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=60);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>用简单的css来写一个吃豆人吧</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>Welcome to <a href="https://silindan.github.io/">四零の博物馆</a>! </p>
-<h4 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h4><p>penname:SilinDan,</p>
-<font size="3"><br><br><br>如果非要用什么来形容自己，也许是“充满好奇心的梦想家”。<br><br>对各种各样有趣的事物充满了好奇，喜欢符合美学的一切。前端恰好有着这样的特点，它有太多新鲜的东西等着我去钻研，又有着这个时代所带来的独特的艺术感。<br><br>我一直欣赏日本人的匠人精神，稻盛和夫在他的《活法》一书中写道：</font>
+                <p>[我们先来看看将要实现的效果：</p>
+<p>可以单击这个链接打开查看效果和代码：<a href="https://codepen.io/sd237720488/pen/LMyNxJ" target="_blank" rel="noopener">https://codepen.io/sd237720488/pen/LMyNxJ</a></p>
+<p>接下来我们来看看怎么实现的，首先它可以分为两个部分，“吃豆人”和“豆子”</p>
+<p>首先HTML部分长这样：](我们先来看看将要实现的效果：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/3/7/16956e5c52c72eaa?w=277&amp;h=169&amp;f=png&amp;s=3610" alt></p>
+<p><img src="https://user-gold-cdn.xitu.io/2019/3/7/16956e5d84d909da?w=306&amp;h=208&amp;f=png&amp;s=4199" alt></p>
+<p>可以单击这个链接打开查看效果和代码：<a href="https://codepen.io/sd237720488/pen/LMyNxJ" target="_blank" rel="noopener">https://codepen.io/sd237720488/pen/LMyNxJ</a></p>
+<p>接下来我们来看看怎么实现的，首先它可以分为两个部分，“吃豆人”和“豆子”</p>
+<p>首先HTML部分长这样：</p>
+<pre><code class="html">
+&lt;div class=&quot;pac-man&quot;&gt;
+  //上半圆
+  &lt;div class=&quot;half&quot;&gt;
+    &lt;div class=&quot;circle&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  //下半圆
+  &lt;div class=&quot;half half-bottom&quot;&gt;
+    &lt;div class=&quot;circle bottom&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  //豆子
+  &lt;div class=&quot;little-circle&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;little-circle&quot;&lt;/div&gt;
 
-<blockquote>
-<p>所以我们有义务人是自己的责任，终其一生去努力磨炼灵魂。从刚出生起，为了使灵魂变得更高尚，一点点一点点地反复精进。我认为这也是人类为什么活在世上的最终答案。 努力勤奋地工作、心怀感恩之心、善思善行、诚恳地反省并约束自己、在日常生活中持续磨炼心智、提高人格。努力做到这些看似理所当然的事情才正是人生的意义。除此之外我以为没有别的活法。</p>
-</blockquote>
-<font size="3"><br>成为一个比降临人世之初更好的人。<br></font>
+&lt;/div&gt;
 
-<h4 id="关于-四零の博物馆"><a href="#关于-四零の博物馆" class="headerlink" title="关于[ 四零の博物馆 ]"></a>关于[ 四零の博物馆 ]</h4><font size="3"><br>为什么要取这个名字呢？<br><br>博物馆与我而言像是宝藏一样的地方，在成长的途中有许多令我喜爱的事物与人，它们便是我生命中的“宝藏”。 而我也想成为一个宝藏，想努力留下很多东西，把这种能量带给其他人。<br><br>博物馆会有什么呢？<br>（以下将会陆续开放）<br>【文章】：技术文章/读书沉思/博物馆周刊（安利每周见闻，好玩有趣的东西）<br>【摄影库】：本人的图片库<br>【收藏博物馆】： 将有三个分类，编程博物馆/文学博物馆/艺术博物馆（和编程文学艺术有关的一切）<br>【友情链接】：广告位，欢迎有个人网站的小伙伴毛遂自荐，要求是博文数不少于10篇，有一定的质量和能吸引人的地方<br></font>
+</code></pre>
+<p>一、吃豆人部分：</p>
+<p>吃豆人由两个半圆组成，先来实现上面的半圆。</p>
+<p>首先绘制一个圆</p>
+<pre><code class="js">//css部分:
+.circle{
+  width:50px;
+  height:50px;
+  border-radius:50%;        
+}
+</code></pre>
+<p>接着将圆截掉一半，构成上面的半圆：</p>
+<pre><code class="css">.half{
+  height:25px;
+  width:50px;
+  overflow:hidden;    
+}
+</code></pre>
+<p>这样一个半圆就形成了，那么如何让半圆动起来呢？这里用到的是animation。</p>
+<pre><code class="css">.half{
+    animation:rotate 1s ease infinite;
+    transform-origin: 50% 100%;
+}
 
-<h3 id="联系我："><a href="#联系我：" class="headerlink" title="联系我："></a>联系我：</h3><p>Email: <a href="mailto:MissJingmi@gmail.com" target="_blank" rel="noopener">MissJingmi@gmail.com</a><br>wechat: 237720488<br>You can catch me in <u><a href="https://github.com/SilinDan" target="_blank" rel="noopener"><strong><em>github</em></strong></a></u> / <u><a href="https://www.zhihu.com/people/silin-dan" target="_blank" rel="noopener"><strong><em>知乎</em></strong></a></u> / <u><a href="https://weibo.com/u/2631163541" target="_blank" rel="noopener"><strong><em>微博</em></strong></a></u> / <u><a href="https://juejin.im/user/5bdc7a7df265da61335609e5/" target="_blank" rel="noopener"><strong><em>掘金</em></strong></a> </u> / <u><a href="https://www.facebook.com/profile.php?id=100028253920296&amp;ref=bookmarks" target="_blank" rel="noopener"><strong><em>Facebook</em></strong></a></u></p>
-<p><center><br>支付宝扫一扫捐赠本站，您的支持是我最大的动力！<br><img src="http://m.qpic.cn/psb?/V12FzsSL2H4QOz/h8x3hFqCe6R9kNYafe5TweDppP8mUBqp6l.sPqYrDww!/b/dEcBAAAAAAAA&amp;bo=bwFQAW8BUAERCT4!&amp;rf=viewer_4" alt><br></center><br><br></p>
+@keyframes rotate{
+     50%{
+        transform:rotate(-45deg);
+    }  
+     100%{
+        transform:rotate(0deg);
+    }  
+}
+
+</code></pre>
+<p>下面的圆也差不多是这样实现的。</p>
+<p>值得注意的是，下方的圆使用transform:translateY(-50%);将圆向上移动50%，截到的半圆就是下半圆了。</p>
+<p>两个圆的transform-origin也是不同的。</p>
+<p>另外，动画效果里的-45deg则要变成45deg。</p>
+<p>二、豆子部分：</p>
+<p>首先我们来分析一下，豆子们的起始位置和终点应该是一致的，而速度也应该是相同的。也就是说，所有豆子（虽然我这里只有两颗，但是你们也可以酌情增加豆子数量）路程、时间、速度都一样，那不同的是什么呢？是它们的出发时间</p>
+<p>在豆子1还未被吃豆人吃到时，豆子2就应该出发了。倘若豆子1的总运动时间为1秒，豆子2的运动时间也应该为1秒，但是，豆子2应该延迟0.5s，在豆子1运动到一半的时候，豆子2出发。这样就可以造成不断有豆子可以吃的假象了（(<em>^__^</em>) 嘻嘻……</p>
+<pre><code class="css">.little-circle:nth-of-type(3) {
+  animation: walk-left 1s infinite linear;//这里做的是匀速直线运动
+}
+
+.little-circle:nth-of-type(4) {
+  animation: walk-left 1s infinite linear 0.5s ;
+}
+</code></pre>
+<p>最后呢，再为豆子的透明度设置变化，出发时是透明的，被吃的时候不透明，造成一个由远到近的假象。</p>
+<p><code>css
+@keyframes walk-left{
+  0%{
+    opacity:0;
+  }
+  100%{
+    left:15px;
+    opacity: 1;
+  }
+}</code>)</p>
 
             </div>
 
@@ -177,7 +249,7 @@
     <!-- 使用 changyan -->
 <div id="changyan-comment">
     <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="about/index.html"></div>
+<div id="SOHUCS" sid="2018/12/23/post用简单的css来写一个吃豆人吧/"></div>
 <script type="text/javascript">
 (function(){
 var appid = '';

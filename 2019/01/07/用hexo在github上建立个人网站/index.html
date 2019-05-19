@@ -151,24 +151,90 @@
 </nav>
 
         <div id="main">
-            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://images.unsplash.com/photo-1527348425885-2ad996ae7ccb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
-                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>about me</h2></a>
+            <div class="post_page_title_img" style="height: 25rem;background-image: url(https://images.unsplash.com/photo-1550029402-226115b7c579?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=60);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;">
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2>用hexo在github上建立个人网站</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p>Welcome to <a href="https://silindan.github.io/">四零の博物馆</a>! </p>
-<h4 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h4><p>penname:SilinDan,</p>
-<font size="3"><br><br><br>如果非要用什么来形容自己，也许是“充满好奇心的梦想家”。<br><br>对各种各样有趣的事物充满了好奇，喜欢符合美学的一切。前端恰好有着这样的特点，它有太多新鲜的东西等着我去钻研，又有着这个时代所带来的独特的艺术感。<br><br>我一直欣赏日本人的匠人精神，稻盛和夫在他的《活法》一书中写道：</font>
-
+                <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li>环境配置</li>
+<li>hexo会有哪些坑</li>
+<li>开始建立一个hexo博客</li>
+<li>挑选一个你喜欢的主题</li>
+<li>与github关联</li>
+<li>创建分支</li>
+<li>部署</li>
+</ul>
+<hr>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>下载 <a href="https://nodejs.org/download/" target="_blank" rel="noopener">Node.js</a></p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>下载<a href="http://git-scm.com/download/" target="_blank" rel="noopener">git</a></p>
+<h1 id="hexo会有哪些坑"><a href="#hexo会有哪些坑" class="headerlink" title="hexo会有哪些坑"></a>hexo会有哪些坑</h1><h2 id="hexo神坑的本质"><a href="#hexo神坑的本质" class="headerlink" title="hexo神坑的本质"></a>hexo神坑的本质</h2><p>在开始之前，意识到需要绕过哪些坑，是非常重要的，它可以帮我们节约不少时间。</p>
+<p>在本地生成后, 将生成页面上传到网站上。应当有两个分支, 一个设置文件, 一个页面文件。<br>但是大家在第一次搭建博客时,会弄不清应当将页面文件放在哪个分支。</p>
+<p>于是便出现各种各样奇怪的问题：<br>比如github发邮件给你告知失败：</p>
 <blockquote>
-<p>所以我们有义务人是自己的责任，终其一生去努力磨炼灵魂。从刚出生起，为了使灵魂变得更高尚，一点点一点点地反复精进。我认为这也是人类为什么活在世上的最终答案。 努力勤奋地工作、心怀感恩之心、善思善行、诚恳地反省并约束自己、在日常生活中持续磨炼心智、提高人格。努力做到这些看似理所当然的事情才正是人生的意义。除此之外我以为没有别的活法。</p>
+<p>The page build failed for the master branch with the following error:<br>The tag fancybox on line 77 in themes/landscape/README.md is not a recognized Liquid tag. For more information, see <a href="https://help.github.com/articles/page-build-failed-unknown-tag-error/" target="_blank" rel="noopener">https://help.github.com/articles/page-build-failed-unknown-tag-error/</a>.</p>
 </blockquote>
-<font size="3"><br>成为一个比降临人世之初更好的人。<br></font>
+<p>而我们要做的就是在一开始绕过这些坑，避免浪费不必要的时间。</p>
+<hr>
+<h1 id="开始建立一个hexo博客"><a href="#开始建立一个hexo博客" class="headerlink" title="开始建立一个hexo博客"></a>开始建立一个hexo博客</h1><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>安装Hexo: <a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">文档|Hexo</a></p>
+<pre><code class="bash">$ npm install -g hexo-cli
+</code></pre>
+<h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>（此时会创建一个文件夹）</p>
+<p>建站：<a href="https://hexo.io/zh-cn/docs/setup.html" target="_blank" rel="noopener">建站|Hexo</a></p>
+<pre><code class="bash">$ hexo init &lt;folder&gt;
+$ cd &lt;folder&gt;
+$ npm install
+</code></pre>
+<h1 id="挑选一个你喜欢的主题"><a href="#挑选一个你喜欢的主题" class="headerlink" title="挑选一个你喜欢的主题"></a>挑选一个你喜欢的主题</h1><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo|主题</a></p>
+<p>打开上面的链接，挑选完毕后，进入该主题的github，将主题git clone下来。</p>
+<ul>
+<li>$ git clone [主题github地址] </li>
+<li>config.yml 里 theme: 后面的 landspace 删掉.</li>
+<li>主题文件夹里的 .git 要在这时就删掉.(.git是隐藏文件)</li>
+<li>自带的主题 landspace 也删掉.</li>
+</ul>
+<h1 id="与github关联"><a href="#与github关联" class="headerlink" title="与github关联"></a>与github关联</h1><h2 id="新建远程仓库"><a href="#新建远程仓库" class="headerlink" title="新建远程仓库"></a>新建远程仓库</h2><ul>
+<li>仓库名为：XXX (yourusername).github。 我的是:SilinDan.github.io</li>
+<li><p>在本地文件夹里设置git</p>
+<pre><code class="bash">&gt;&gt; git init
+</code></pre>
+<h2 id="本地与github仓库关联"><a href="#本地与github仓库关联" class="headerlink" title="本地与github仓库关联"></a>本地与github仓库关联</h2><pre><code class="bash">&gt;&gt;  git remote add origin http:// … (你的远程仓库链接)
 
-<h4 id="关于-四零の博物馆"><a href="#关于-四零の博物馆" class="headerlink" title="关于[ 四零の博物馆 ]"></a>关于[ 四零の博物馆 ]</h4><font size="3"><br>为什么要取这个名字呢？<br><br>博物馆与我而言像是宝藏一样的地方，在成长的途中有许多令我喜爱的事物与人，它们便是我生命中的“宝藏”。 而我也想成为一个宝藏，想努力留下很多东西，把这种能量带给其他人。<br><br>博物馆会有什么呢？<br>（以下将会陆续开放）<br>【文章】：技术文章/读书沉思/博物馆周刊（安利每周见闻，好玩有趣的东西）<br>【摄影库】：本人的图片库<br>【收藏博物馆】： 将有三个分类，编程博物馆/文学博物馆/艺术博物馆（和编程文学艺术有关的一切）<br>【友情链接】：广告位，欢迎有个人网站的小伙伴毛遂自荐，要求是博文数不少于10篇，有一定的质量和能吸引人的地方<br></font>
-
-<h3 id="联系我："><a href="#联系我：" class="headerlink" title="联系我："></a>联系我：</h3><p>Email: <a href="mailto:MissJingmi@gmail.com" target="_blank" rel="noopener">MissJingmi@gmail.com</a><br>wechat: 237720488<br>You can catch me in <u><a href="https://github.com/SilinDan" target="_blank" rel="noopener"><strong><em>github</em></strong></a></u> / <u><a href="https://www.zhihu.com/people/silin-dan" target="_blank" rel="noopener"><strong><em>知乎</em></strong></a></u> / <u><a href="https://weibo.com/u/2631163541" target="_blank" rel="noopener"><strong><em>微博</em></strong></a></u> / <u><a href="https://juejin.im/user/5bdc7a7df265da61335609e5/" target="_blank" rel="noopener"><strong><em>掘金</em></strong></a> </u> / <u><a href="https://www.facebook.com/profile.php?id=100028253920296&amp;ref=bookmarks" target="_blank" rel="noopener"><strong><em>Facebook</em></strong></a></u></p>
-<p><center><br>支付宝扫一扫捐赠本站，您的支持是我最大的动力！<br><img src="http://m.qpic.cn/psb?/V12FzsSL2H4QOz/h8x3hFqCe6R9kNYafe5TweDppP8mUBqp6l.sPqYrDww!/b/dEcBAAAAAAAA&amp;bo=bwFQAW8BUAERCT4!&amp;rf=viewer_4" alt><br></center><br><br></p>
+&gt;&gt; git push -u origin master
+</code></pre>
+<h1 id="创建gh-pages分支"><a href="#创建gh-pages分支" class="headerlink" title="创建gh-pages分支"></a>创建gh-pages分支</h1></li>
+<li><p>注意, 以后源代码都在这个分支</p>
+<p>创建并切换到此分支：</p>
+<pre><code class="bash">$ git checkout -b gh-pages
+$ git push -u origin gh-pages
+</code></pre>
+</li>
+</ul>
+<h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p>hexo 部署到 github: <a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="noopener">部署 | Hexo</a></p>
+<ul>
+<li>在 config.yml 里添加 theme: 你的主题名</li>
+<li>npm install hexo-deployer-git –save</li>
+<li>修改_config 关于deploy部分内容</li>
+</ul>
+<pre><code class="yml"># Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+type: git
+repo:  你的远程仓库 url`
+(e.g.我的是: https://github.com/SilinDan/SilinDan.github.io  )`
+branch: master
+# URL
+## If your site is put in a subdirectory, set url as &#39;http://yoursite.com/child&#39; and root as &#39;/child/&#39;
+url: http://http://hexo.junyu.pro
+root: /
+permalink: :year/:month/:day/:title/
+permalinkdefaults:
+</code></pre>
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><ul>
+<li>配置文件永远在 gh-pages 分支, 不需转换分支到 master</li>
+<li>转换分支前, 先 git add . /git commit 以防分支互相污染, 这将直接导致你回不去.</li>
+<li>另外, 尝试添加新功能前, 另建分支尝试, 测试可用后再合并到 gh-pages 分支.</li>
+</ul>
 
             </div>
 
@@ -177,7 +243,7 @@
     <!-- 使用 changyan -->
 <div id="changyan-comment">
     <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="about/index.html"></div>
+<div id="SOHUCS" sid="2019/01/07/用hexo在github上建立个人网站/"></div>
 <script type="text/javascript">
 (function(){
 var appid = '';

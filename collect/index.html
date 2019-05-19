@@ -71,7 +71,7 @@
 
 
 <!--  代码渲染  -->
-<link rel="stylesheet" href="/css/prism_coy.css">
+<link rel="stylesheet" href="/css/prism_okaidia.css">
 <link rel="stylesheet" href="/css/typo.css">
 <!-- 文章页 -->
 <body class="is-loading">
@@ -96,7 +96,7 @@
 	            <a href="#s1">文章</a>
 	                    <ul class="submenu">
 	                        <li>
-	                        <a class="category-link" href="/categories/技术文章/">技术文章</a></li><li><a class="category-link" href="/categories/读书笔记/">读书笔记</a>
+	                        <a class="category-link" href="/categories/博物馆周刊/">博物馆周刊</a></li><li><a class="category-link" href="/categories/反思与沉淀/">反思与沉淀</a></li><li><a class="category-link" href="/categories/编程/">编程</a>
 	                    </li></ul>
 	        </li>
 	        
@@ -106,7 +106,7 @@
 		        <!-- Pages 自定义   -->
 		        
 		        <li>
-		            <a href="/Gallery/" title="摄影库">
+		            <a href="/gallery/" title="摄影库">
 		                摄影库
 		            </a>
 		        </li>
@@ -162,83 +162,21 @@
 
             <!-- Post Comments -->
             
-    <!-- 使用 DISQUS_CLICK -->
-<div id="disqus-comment">
-    <div id="disqus_thread"></div>
-
-<!-- add animation -->
-<style>
-	.disqus_click_btn {
-            line-height: 30px;
-            margin: 0;
-            min-width: 50px;
-            padding: 0 14px;
-            display: inline-block;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0;
-            overflow: hidden;
-            will-change: box-shadow;
-            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
-            outline: 0;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            vertical-align: middle;
-            border: 0;
-            background: rgba(158, 158, 158, .2);
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-            color: #fff;
-            background-color: #7EC0EE;
-            text-shadow: 0
-        }
-</style>
-	
-<div class="btn_click_load" id="disqus_bt"> 
-    <button class="disqus_click_btn">点击查看评论</button>
-</div>
-
-<!--
+    <!-- 使用 changyan -->
+<div id="changyan-comment">
+    <!--PC和WAP自适应版-->
+<div id="SOHUCS" sid="collect/index.html"></div>
 <script type="text/javascript">
-$('.btn_click_load').click(function() {
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+(function(){
+var appid = '';
+var conf = '';
+var width = window.innerWidth || document.documentElement.clientWidth;
+if (width < 960) {
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-
-    document.getElementById('disqus_bt').style.display = "none";
-});
-</script>
--->
-<script type="text/javascript">
-    var disqus_config = function () {
-        this.page.url = 'https://silindan.github.io/collect/index.html';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'https://silindan.github.io/collect/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-</script>
-
-<script type="text/javascript">
-    $('.btn_click_load').click(function() {  //click to load comments
-        (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document;
-            var s = d.createElement('script');
-            s.src = '//http-miccall-tech.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', + new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-        $('.btn_click_load').css('display','none');
-    });
-</script>
 </div>
 <style>
-    #disqus-comment{
+    #changyan-comment{
         background-color: #eee;
         padding: 2pc;
     }
@@ -247,19 +185,19 @@ $('.btn_click_load').click(function() {
 
         </div>
         <!-- Copyright 版权 start -->
-                <div id="copyright">
-            <ul>
-                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
-                <li> 
-                    Onwer <a href="http://miccall.tech " style="border-bottom: none;">Silin Dan</a>
-                    <a href="https://github.com/SilinDan"><i class="icon fa fa-github"></i></a>
-                    <a href="https://weibo.com/u/2631163541"><i class="icon fa fa-weibo"></i></a>
-                </li>
-            </ul>
-            
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-			
-        </div>
+        <div id="copyright">
+    <ul>
+        <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+        <li>
+            Onwer <a href="https://github.com/SilinDan" style="border-bottom: none;">Silin Dan</a>
+            <a href="https://github.com/SilinDan"><i class="icon fa fa-github"></i></a>
+            <a href="https://weibo.com/u/2631163541"><i class="icon fa fa-weibo"></i></a>
+        </li>
+    </ul>
+    
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    
+</div>
     </div>
 </body>
 
